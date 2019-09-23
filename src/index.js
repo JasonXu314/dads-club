@@ -100,5 +100,16 @@ $(window).on('load', () => {
                 ));
             $(document.head).append($('<meta id = "triviaNight">'));
         }
-    })
+    });
+
+    $('#contactInfo').click(function(evt) {
+        if (evt.target === this && $('meta#contactInfo').length === 0)
+        {
+            /**
+             * YOUR CODE GOES HERE
+             */
+
+             $(document.head).append($('<meta id = "triviaNight">'));
+        }
+    });
 });
